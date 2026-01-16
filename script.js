@@ -28,9 +28,13 @@ function salomBer(name) {
 // 3-masala
 let text = ["olma", "anor", "shovullashi", "behi"];
 
-function textLeinght(arr) {
-  arr.forEach((e) => {
-    console.log(e.length);
-  });
+function textLeinghtMax(arr) {
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > max.length) {
+      max = arr[i];
+    }
+  }
+  return max;
 }
-textLeinght(text);
+console.log(textLeinghtMax(text));;
